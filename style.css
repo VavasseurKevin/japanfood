@@ -228,5 +228,8 @@
   .connect-text h2 {
     font-size: var(--h2-font);
   }
-  
+  .copyright {
+    padding: 20px;
+    text-align: center;
+  }
  
