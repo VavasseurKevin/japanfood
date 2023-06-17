@@ -8,6 +8,8 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
 }
 
 *::selection {
@@ -221,6 +223,11 @@
   .addresse span {
     margin-left: 1rem;
   }
+  .connect {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
   .connect-text span {
     color: var(--main-color);
     font-weight: 500;
@@ -228,8 +235,85 @@
   .connect-text h2 {
     font-size: var(--h2-font);
   }
+  
   .copyright {
     padding: 20px;
     text-align: center;
+  }
+  #menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+  }
+  @media (max-width: 921px) {
+    header {
+      padding: 14px 41px;
+    }
+    :root {
+      --big-font: 3rem;
+      --h2-font: 1.7rem;
+    }
+  }
+  @media (max-width: 768px) {
+    section {
+      padding: 50px 8%;
+    }
+    #menu-icon {
+      display: initial;
+      color: var(--text-color);
+    }
+    header .navbar {
+      position: absolute;
+      top: -400px;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background: var(--bg-color);
+      box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+      transition: 0.2s ease;
+    }
+    .navbar.active {
+      top: 100%;
+    }
+    .navbar a {
+      padding: 1.5rem;
+      display: block;
+      background: var(--bg-color);
+    }
+
+  }
+  @media (max-width: 715px) {
+    header {
+      padding: 10px 16px;
+    }
+    .accueil {
+      grid-template-columns: 1fr;
+    }
+    .nous {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .nous-img {
+      order: 2;
+    }
+  }
+  @media (max-width: 515px) {
+    .connect {
+      flex-direction: column;
+    }
+    .connect .btn {
+      margin-top: 1rem;
+    }
+  }
+  @media (max-width: 450px) {
+    :root {
+      --big-font: 2rem;
+      --h2-font: 1.4rem;
+    }
+    .accueil-text {
+      padding-top: 4rem;
+    }
   }
  
