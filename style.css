@@ -97,5 +97,25 @@
   .btn:hover {
     background:  var(--main-color);
   }
+  .nous {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .nous-img img {
+    max-width: 80%;
+    border-radius: 0.5rem;
+  }
+  .nous-text span {
+    color: var(--main-color);
+    font-weight: 500;
+  }
+  .nous-text h2 {
+    font-size: var(--h2-font);
+  }
+  .nous-text p {
+    margin: 0.8rem 0 1.8rem;
+  }
   
  
