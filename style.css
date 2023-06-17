@@ -169,5 +169,57 @@
     font-size: var(--p-font);
     font-weight: 500;
   }
+  .servives-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .services-box {
+    text-align: center;
+  }
+  .services-box img {
+    width: 60px;
+  }
+  .services-box h3 {
+    margin: 4px 0 10px;
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1.5rem;
+  }
+  .contact-box h3 {
+    margin-bottom: 1rem;
+  }
+  .social {
+    display: flex;
+    margin-top: 1.5rem;
+  }
+  .social i {
+    font-size: 20px;
+    margin-right: 1rem;
+    color: var(--text-color);
+  }
+  .social i:hover {
+    color: var(--main-color);
+  }
+  .contact-box li a {
+    color: var(--text-color);
+  }
+  .contact-box li a:hover {
+    color: var(--main-color);
+  }
+  .addresse {
+    display: flex;
+    flex-direction: column;
+  }
+  .addresse i {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  .addresse span {
+    margin-left: 1rem;
+  }
   
  
