@@ -221,5 +221,12 @@
   .addresse span {
     margin-left: 1rem;
   }
+  .connect-text span {
+    color: var(--main-color);
+    font-weight: 500;
+  }
+  .connect-text h2 {
+    font-size: var(--h2-font);
+  }
   
  
